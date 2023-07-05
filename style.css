@@ -1,0 +1,113 @@
+/*
+FONT SIZES:
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ WHITESPACING:
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+
+ */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #904d4d97;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  color: #180d0d;
+}
+.container {
+  background-color: #f8c0c0;
+  padding: 3.2rem 4.8rem;
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translate3d(0, -5px, 20px);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  color: #180d0d;
+}
+input {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+}
+input:focus {
+  background-color: #fce6e6;
+  transition: all 250ms;
+  transform: scale(1.01);
+}
+.label {
+  margin-bottom: 1rem;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 4.8rem auto;
+  padding: 0.8rem 2.4rem;
+  background-color: #784040;
+  border-radius: 0.7rem;
+  border: none;
+  color: white;
+  box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.715);
+}
+.check:hover {
+  transition: all 500ms;
+  cursor: pointer;
+  box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.534);
+  background-color: #fef2f2;
+  color: #301a1a;
+}
+.check:active {
+  transform: scale(1.1);
+}
+.answer {
+  display: none;
+}
+
+@media (max-width: 52rem) {
+  .container {
+    width: 75%;
+  }
+}
+@media (max-width: 30rem) {
+  .container {
+    width: 95%;
+  }
+}
